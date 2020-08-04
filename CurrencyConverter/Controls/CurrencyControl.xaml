@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="CurrencyConverter.Controls.CurrencyControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CurrencyConverter.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="210">
+    <Grid Background="#E5E5E5" MinHeight="50" MinWidth="210">
+        <StackPanel Margin="5">
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="flagImage" Source="../images/usd.png" Width="25" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                <TextBlock x:Name="codeTextBlock" Text="USD" 
+                                   FontSize="17"/>
+                <TextBlock x:Name="nameTextBlock" VerticalAlignment="Center" Margin="12 0 0 0" Text="United States Dollar"
+                                   FontSize="10"
+                                   FontStyle="Italic"/>
+            </StackPanel>
+                <TextBlock x:Name="valueTextBlock"
+                       FontSize="15"
+                       FontWeight="Bold"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
